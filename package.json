@@ -17,7 +17,11 @@
     "@mdx-js/react": "^1.1.5",
     "change-case": "^3.1.0",
     "gatsby": "^2.13.50",
+    "gatsby-image": "^2.2.8",
     "gatsby-plugin-mdx": "^1.0.22",
+    "gatsby-plugin-sharp": "^2.2.9",
+    "gatsby-source-filesystem": "^2.1.8",
+    "gatsby-transformer-sharp": "^2.2.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
