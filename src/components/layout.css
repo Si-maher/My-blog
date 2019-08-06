@@ -17,6 +17,7 @@ body {
   background: var(--mainGrey);
   color: var(--mainBlack);
 }
+
 .code {
   background: #f15025;
   display: inline-block;
@@ -25,8 +26,13 @@ body {
   color: var(--mainWhite);
   margin: 2rem 0;
 }
-.counter {
+
+.counter{
   color: green;
   margin: 3rem 0;
-  text-transform: capitalize;
+  text-transform: uppercase;
+}
+
+.counter button {
+  font-size: 2rem;
 }

@@ -13,12 +13,12 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.1.5",
-    "@mdx-js/react": "^1.1.5",
-    "change-case": "^3.1.0",
-    "gatsby": "^2.13.50",
+    "@mdx-js/mdx": "^1.0.20",
+    "@mdx-js/react": "^1.0.20",
+    "@mdx-js/tag": "^0.20.3",
+    "gatsby": "^2.9.4",
     "gatsby-image": "^2.2.8",
-    "gatsby-plugin-mdx": "^1.0.22",
+    "gatsby-mdx": "^0.6.3",
     "gatsby-plugin-sharp": "^2.2.9",
     "gatsby-source-filesystem": "^2.1.8",
     "gatsby-transformer-sharp": "^2.2.5",
