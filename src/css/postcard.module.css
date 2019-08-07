@@ -33,6 +33,9 @@
   background: var(--mainBlack);
   color: var(--mainWhite);
 }
+/* .image > div {
+  height: 250px;
+} */
 @media screen and (min-width: 776px) {
   .card {
     display: grid;

@@ -1,13 +1,19 @@
-import React from 'react';
-import PostCard from './PostCard'
+// Responsible for rendering the whole list
+import React from "react"
+import PostCard from "./PostCard"
+import styles from "../css/postlist.module.css"
+const PostList = ({ posts }) => {
+  return (
+    <section className={styles.posts}>
+      <h1>Simon Maher</h1>
+      <h4>Personal Blog</h4>
+      <div className={styles.center}>
+        {posts.map(({ node }, index) => {
+          return <PostCard key={index} post={node} />
+        })}
+      </div>
+    </section>
+  )
+}
 
-const PostList = () => {
-    return (
-        <div>
-            hello from post list
-            <PostCard/>
-        </div>
-    );
-};
-
-export default PostList;
+export default PostList
