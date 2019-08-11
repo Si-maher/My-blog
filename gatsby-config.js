@@ -1,14 +1,24 @@
 module.exports = {
   plugins: [
-    `gatsby-transformer-sharp`, 
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    
+
     {
       resolve: `gatsby-source-filesystem`,
-      options:{
+      options: {
         name: `posts`,
         path: `src/posts`,
-      }
+      },
     },
-    `gatsby-mdx`],
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-images",
+          },
+        ],
+      },
+    },
+  ],
 }

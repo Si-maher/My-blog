@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link } from "gatsby"
+
 import PostList from "../components/PostList"
 import { graphql, useStaticQuery } from "gatsby"
 
@@ -33,7 +33,11 @@ const getPosts = graphql`
 
 export default () => {
   const response = useStaticQuery(getPosts)
+  console.log(response)
+
   const posts = response.allMdx.edges
+  console.log(posts)
+
   return (
     <Layout>
       <PostList posts={posts} />

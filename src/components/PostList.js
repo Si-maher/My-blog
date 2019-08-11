@@ -2,7 +2,10 @@
 import React from "react"
 import PostCard from "./PostCard"
 import styles from "../css/postlist.module.css"
+
 const PostList = ({ posts }) => {
+  console.log(posts)
+
   return (
     <section className={styles.posts}>
       <h1>Simon Maher</h1>

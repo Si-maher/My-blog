@@ -27,7 +27,7 @@ body {
   margin: 2rem 0;
 }
 
-.counter{
+.counter {
   color: green;
   margin: 3rem 0;
   text-transform: uppercase;
@@ -35,4 +35,10 @@ body {
 
 .counter button {
   font-size: 2rem;
+}
+
+.post-image span {
+  display: block;
+  max-width: 100% !important;
+  margin: 2rem;
 }
