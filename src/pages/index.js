@@ -1,21 +1,16 @@
 import React from "react"
+// import { Link } from "gatsby"
 import Layout from "../components/layout"
-
-import PostList from "../components/PostList"
 import { graphql, useStaticQuery } from "gatsby"
-
-// Create query
+import PostList from "../components/PostList"
 const getPosts = graphql`
   {
     allMdx(sort: { fields: frontmatter___date, order: DESC }) {
-      totalCount
       edges {
         node {
           frontmatter {
             title
             slug
-            date(formatString: "MMMM Do, YYYY")
-            author
             image {
               childImageSharp {
                 fluid {
@@ -23,6 +18,8 @@ const getPosts = graphql`
                 }
               }
             }
+            date(formatString: "MMMM Do, YYYY")
+            author
           }
           excerpt
         }
@@ -30,16 +27,14 @@ const getPosts = graphql`
     }
   }
 `
-
 export default () => {
   const response = useStaticQuery(getPosts)
-  console.log(response)
-
   const posts = response.allMdx.edges
-  console.log(posts)
 
   return (
     <Layout>
+      {/* <h1>home page</h1> */}
+      {/* <Link to="/post/">Post Page</Link> */}
       <PostList posts={posts} />
     </Layout>
   )
